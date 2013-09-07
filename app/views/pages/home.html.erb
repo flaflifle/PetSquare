@@ -1,0 +1,7 @@
+<% provide :title, 'Home' %>
+
+<h1>This is HomePage</h1>
+<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+<% if signed_in? %>
+<%= render 'shared/feed' %>
+<% end %>

@@ -1,0 +1,8 @@
+<% provide :title, "Animal #{@pet.namePet}" %>
+<h1><%= @pet.namePet %></h1>
+<h2><%= @pet.breed %></h2>
+<h2><%= @pet.description %></h2>
+<section>
+  <%= render 'shared/stats' %>
+  <%= render 'follow_form' if signed_in? %>
+</section>

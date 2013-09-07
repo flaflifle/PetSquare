@@ -1,0 +1,10 @@
+<h1>Crea il profilo al tuo animale</h1>
+
+<div>
+  <%= form_for(@pet) do |f| %>
+
+      <%= render 'fields', f: f %>
+
+      <%= f.submit 'Create my animal profile', class: 'btn btn-primary' %>
+  <% end %>
+</div>

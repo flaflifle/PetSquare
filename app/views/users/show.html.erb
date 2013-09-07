@@ -1,0 +1,16 @@
+<% provide :title, @user.name %>
+<h1>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+  <div class="span8">
+    <% if @user.pets.any? %>
+        <h3>Pets (<%= @user.pets.count %>)</h3>
+        <ol class="microposts">
+          <%= link_to "PEts", pets_user_path(@user)%>
+        </ol>
+    <% else %>
+        <%= link_to "crea il profilo al tuo animale", addPet_path %>
+    <% end %>
+
+  </div>
+</h1>
