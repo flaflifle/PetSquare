@@ -14,8 +14,8 @@ class PetsController < ApplicationController
   end
 
   def create
-    @user =User.find_by_email(current_user.email)
-    @pet=@user.pets.build(params[:pet])
+    #@user =User.find(current_user)
+    @pet=current_user.pets.build(params[:pet])
     if @pet.save
       # handle a successful save
       flash[:success] = 'Pet profilo created'
