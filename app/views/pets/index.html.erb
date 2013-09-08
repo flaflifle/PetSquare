@@ -6,7 +6,7 @@
       <td><%= pet.description %></td>
       <td><%= link_to 'Show', pet_path(pet) %></td>
       <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
-      <td><% if current_user.admin? && !current_user?(pet.user_id) %>
+      <td><% if current_user.admin? || current_user?(pet.user) %>
             | <%= link_to 'Delete', pet, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
           <% end %>
      </tr>

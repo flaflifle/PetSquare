@@ -19,6 +19,7 @@ PetSquare::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
+  match '/search', to: 'places#search_form'
   match '/addPet', to: 'pets#new'
 
   # Sample of named route:
@@ -38,12 +39,23 @@ PetSquare::Application.routes.draw do
     member do
       get :followers
     end
+
+    collection do
+      get :search
+    end
   end
 
   resources :sessions, only: [:new, :create, :destroy]
   resources :pets
 
-  resources :places, only: [:index , :show]
+
+
+  resources :places, only: [:index,:show] do
+    collection do
+      get :search
+    end
+  end
+
   resources :relationships, only: [:create, :destroy]
 
   # Sample resource route with options:

@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
- #nn ho capito before_action :signed_in_user, only: [:edit, :update]
-  #before_action :correct_user,   only: [:edit, :update]
+  before_filter :signed_in_user, only: [:edit, :update, :index, :destroy]
+  # check if the current user is the correct user (e.g., for editing only his information)
+  before_filter :correct_user, only: [:edit, :update]
+  # check if the current user is also an admin
   before_filter :admin_user, only: :destroy
+
 
   def index
     @users = User.all
@@ -31,6 +34,13 @@ class UsersController < ApplicationController
 
   def edit
    @user = User.find(params[:id])
+   if @user.update_attributes(user_params)
+     flash[:success] = "Profile updated"
+     sign_in @user
+     redirect_to @user
+   else
+     render 'edit'
+   end
   end
 
 
@@ -65,6 +75,8 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
+
+  # Before filters
 
   # Redirect the user to the Sign in page if she is not logged in
   def signed_in_user

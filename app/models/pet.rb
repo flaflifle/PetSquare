@@ -11,4 +11,12 @@ class Pet < ActiveRecord::Base
   validates :breed, presence: true, length: { maximum: 50 };
   validates :description, presence: true, length: { maximum: 50 };
 
+  def self.search(user_pet)
+    if user_pet
+      where('breed LIKE ?', "%#{user_pet}%")
+    else
+      scoped # return an empty result set
+    end
+  end
+
 end

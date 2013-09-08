@@ -9,7 +9,6 @@ class CreatePlaces < ActiveRecord::Migration
       t.decimal :latitude
       t.decimal :longitude
       t.boolean :gmaps, :default => false
-
       t.timestamps
     end
   end
