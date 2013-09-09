@@ -1,5 +1,7 @@
 class Place < ActiveRecord::Base
-  attr_accessible :category, :city, :country, :gmaps, :latitude, :longitude, :name, :street
+  attr_accessible :category, :city, :country, :gmaps, :latitude, :longitude, :name, :street, :description
+
+  validates :description, presence: true, length: { maximum: 250 };
 
   acts_as_gmappable
   def gmaps4rails_address

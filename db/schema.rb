@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130906093148) do
+ActiveRecord::Schema.define(:version => 20130909211829) do
 
   create_table "pets", :force => true do |t|
     t.string   "namePet"
@@ -32,9 +32,10 @@ ActiveRecord::Schema.define(:version => 20130906093148) do
     t.string   "country"
     t.decimal  "latitude"
     t.decimal  "longitude"
-    t.boolean  "gmaps",      :default => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.boolean  "gmaps",       :default => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.string   "description"
   end
 
   create_table "relationships", :force => true do |t|

@@ -1,3 +1,9 @@
 <% provide :title, "Place: #{@place.name}" %>
 
-<%= gmaps4rails(@json) %>
+<%= gmaps({
+                  "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 },
+                  "markers"     => {"data" => @json }
+          }) %>
+
+<div>Descrizione:</div>
+<%= @place.description %>
