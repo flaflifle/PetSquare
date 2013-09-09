@@ -1,0 +1,16 @@
+<h1>this is new place</h1>
+
+<div>
+  <%= form_for(@place) do |f|%>
+      <%= f.text_field :name, placeholder: 'nome posto' %>
+      <%= f.text_field :category, placeholder: 'categoria' %>
+
+      <%= f.text_field :street, placeholder: 'strada' %>
+      <%= f.text_field :city, placeholder: 'city' %>
+
+      <%= f.text_field :country, placeholder: 'country' %>
+      <%= f.text_field :description, placeholder: 'descrizione' %>
+
+      <%= f.submit 'Create new place', class: 'btn btn-large btn-primary' %>
+  <% end %>
+</div>

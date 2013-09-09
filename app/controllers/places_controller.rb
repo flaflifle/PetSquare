@@ -9,6 +9,25 @@ class PlacesController < ApplicationController
     @json = @place.to_gmaps4rails
   end
 
+  def new
+    @place = Place.new
+    @json = @place.to_gmaps4rails
+  end
+
+  def create
+    @place = Place.create(params[:place])
+    @json = @place.to_gmaps4rails
+    if @place.save
+      # handle a successful save
+      flash[:success] = 'Posto aggiunto con successo!'
+      # automatically sign in
+      redirect_to @place
+    else
+      render 'new'
+    end
+
+  end
+
   def search
     if params[:search_name].empty? && params[:search_cat].empty?
       flash.now[:pippo] = "almeno uno dei campi deve essere pieno"

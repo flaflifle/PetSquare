@@ -21,6 +21,7 @@ PetSquare::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
   match '/search', to: 'places#search_form'
   match '/addPet', to: 'pets#new'
+  match '/addPlace', to: 'places#new'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
@@ -47,10 +48,11 @@ PetSquare::Application.routes.draw do
 
   resources :sessions, only: [:new, :create, :destroy]
   resources :pets
+  resources :places
 
 
 
-  resources :places, only: [:index,:show] do
+  resources :places do
     collection do
       get :search
     end
