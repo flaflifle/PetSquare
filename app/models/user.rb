@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
   has_many :followed_pets, through: :relationships, source: :followed
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
 
+  has_many :reviews
+
   has_secure_password
 
   # put the email in downcase before saving the user

@@ -1,4 +1,14 @@
 PetSquare::Application.routes.draw do
+  get "reviews/index"
+
+  get "reviews/show"
+
+  get "reviews/destroy"
+
+  get "reviews/new"
+
+  get "reviews/create"
+
   get "relationships/create"
 
   get "relationships/destroy"
@@ -48,11 +58,14 @@ PetSquare::Application.routes.draw do
 
   resources :sessions, only: [:new, :create, :destroy]
   resources :pets
-  resources :places
+  #resources :places
 
 
 
   resources :places do
+    resources :reviews
+    resources :users
+
     collection do
       get :search
     end

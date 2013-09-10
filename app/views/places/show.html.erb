@@ -1,5 +1,7 @@
 <% provide :title, "Place: #{@place.name}" %>
 
+<h1><%= @place.name %></h1>
+
 <%= gmaps({
                   "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 },
                   "markers"     => {"data" => @json }
@@ -7,3 +9,29 @@
 
 <div>Descrizione:</div>
 <%= @place.description %>
+
+<h2>Reviews</h2>
+<% @place.reviews.each do |review| %>
+    <p>
+      <strong>User:</strong>
+      <%- #controllare mvc %>
+      <% @user=User.find(review.user_id) %>
+      <%= link_to @user.name, user_path(@user) %>
+    </p>
+
+    <p>
+      <strong>Review:</strong>
+      <%= review.body %>
+    </p>
+<% end %>
+
+<h2>Add a review:</h2>
+<%= form_for([@place, @place.reviews.build]) do |f| %>
+    <p>
+      <%= f.label :body %><br />
+      <%= f.text_field :body %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
