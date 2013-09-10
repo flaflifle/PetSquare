@@ -4,9 +4,9 @@
 <h2>this is the big bang</h2>
 
 <% if signed_in? %>
+    <%= link_to 'Cerca animale', searchPet_path %>
+    <%= link_to 'Cerca Posto', searchPlace_path %>
     <%= render 'shared/feed' %>
-    <%= render 'pets/search_form' %>
-    <%= link_to "Cerca Posto", search_path %>
 <% else  %>
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
 <% end %>

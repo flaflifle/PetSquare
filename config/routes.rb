@@ -12,7 +12,8 @@ PetSquare::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
-  match '/search', to: 'places#search_form'
+  match '/searchPlace', to: 'places#search_form'
+  match '/searchPet', to: 'pet#serch_form'
   match '/addPet', to: 'pets#new'
   match '/addPlace', to: 'places#new'
 
