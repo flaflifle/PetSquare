@@ -1,4 +1,8 @@
 <% provide :title, 'Search results' %>
-<ul class="users">
+<% unless @pets.nil? %>
+<ul class="pet">
   <%= render @pets %>
 </ul>
+<% else %>
+  <p>nessun tipo di animaletto trovato</p>
+<% end %>

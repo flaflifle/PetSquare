@@ -1,0 +1,7 @@
+<% if @pets.any? %>
+    <div class="user_avatars">
+      <% @pets.each do |pet| %>
+          <%= link_to pet.namePet, pet_path(pet) %>
+      <% end %>
+    </div>
+<% end %>

@@ -7,6 +7,7 @@
     <%= link_to 'Cerca animale', searchPet_path %>
     <%= link_to 'Cerca Posto', searchPlace_path %>
     <%= render 'shared/feed' %>
+    <%= link_to 'Visualizza Animali che mi piacciono', following_user_path(@user) %>
 <% else  %>
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
 <% end %>

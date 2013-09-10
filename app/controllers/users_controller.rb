@@ -70,6 +70,12 @@ class UsersController < ApplicationController
     render 'pets/index'
   end
 
+  def following
+    @title = "Following"
+    @user = User.find(params[:id])
+    @pets = @user.followed_pets
+    render 'show_followed'
+  end
 
   private
 

@@ -13,7 +13,7 @@ PetSquare::Application.routes.draw do
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
   match '/searchPlace', to: 'places#search_form'
-  match '/searchPet', to: 'pet#serch_form'
+  match '/searchPet', to: 'pets#search_form'
   match '/addPet', to: 'pets#new'
   match '/addPlace', to: 'places#new'
 
@@ -28,6 +28,7 @@ PetSquare::Application.routes.draw do
   #resources :pets
       member do
         get :pets
+        get :following
       end
   end
 
