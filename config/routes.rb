@@ -24,7 +24,7 @@ PetSquare::Application.routes.draw do
   #   resources :products
 
   resources :users do
-  resources :pets
+  #resources :pets
       member do
         get :pets
       end

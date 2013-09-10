@@ -4,12 +4,13 @@ class PetsController < ApplicationController
   before_filter :correct_user, only: [:destroy, :edit, :update]
 
 
-  def index
-    @pets=@user.pets
+  def index (user)
+    @pets=user.pets
   end
 
   def show
     @pet=Pet.find(params[:id])
+    @user=User.find(@pet.user_id)
   end
 
   def new

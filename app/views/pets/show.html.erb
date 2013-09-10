@@ -2,6 +2,7 @@
 <h1><%= @pet.namePet %></h1>
 <h2><%= @pet.breed %></h2>
 <h2><%= @pet.description %></h2>
+<h3><%= link_to @user.name, user_path(@user) %></h3>
 <section>
   <%= render 'shared/stats' %>
   <%= render 'follow_form' if signed_in? %>
