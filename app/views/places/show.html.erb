@@ -15,9 +15,7 @@
 <% @place.reviews.each do |review| %>
     <p>
       <strong>User:</strong>
-      <%- #controllare mvc %>
-      <% @user=User.find(review.user_id) %>
-      <%= link_to @user.name, user_path(@user) %>
+      <%= link_to review.user.name, user_path(review.user.name) %>
     </p>
 
     <p>

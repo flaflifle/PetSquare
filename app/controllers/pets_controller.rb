@@ -10,7 +10,7 @@ class PetsController < ApplicationController
 
   def show
     @pet=Pet.find(params[:id])
-   #@user=User.find(@pet.user_id)
+    @checkins = @pet.checkins
   end
 
   def new
@@ -18,7 +18,6 @@ class PetsController < ApplicationController
   end
 
   def create
-    #@user =User.find(current_user)
     @pet=current_user.pets.build(params[:pet])
     if @pet.save
       # handle a successful save

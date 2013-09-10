@@ -1,0 +1,8 @@
+<li>
+  <span class="content"><%= link_to checkin.place.name, place_path(checkin.place_id) %>
+    con <%= link_to checkin.pet.namePet, pet_path(checkin.pet_id) %>
+  </span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(checkin.created_at) %> ago.
+  </span>
+</li>

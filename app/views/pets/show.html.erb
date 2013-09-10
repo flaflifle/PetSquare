@@ -6,4 +6,12 @@
 <section>
   <%= render 'shared/stats' %>
   <%= render 'follow_form' if signed_in? %>
+
+  <% if @pet.checkins.any? %>
+      <h3>Check-in: (<%= @pet.checkins.count %>)</h3>
+      <ol class="checkin">
+        <%= render @checkins %>
+      </ol>
+  <% end %>
+
 </section>
