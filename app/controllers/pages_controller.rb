@@ -4,6 +4,7 @@ class PagesController < ApplicationController
       @user= current_user
       @pet  = current_user.pets.build
       @feed_items = current_user.feed
+     # @petFeeds = Pet.find(@feed_item.pet_id)
     end
   end
 

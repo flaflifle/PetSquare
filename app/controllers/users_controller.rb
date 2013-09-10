@@ -70,6 +70,7 @@ class UsersController < ApplicationController
     render 'pets/index'
   end
 
+
   private
 
   def user_params

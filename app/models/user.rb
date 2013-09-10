@@ -47,15 +47,13 @@ class User < ActiveRecord::Base
     relationships.find_by_followed_id(pet).destroy
   end
 
-  def feed
-    # This is preliminary. See "Following users" for the full implementation.
-    Pet.where("user_id = ?", id)
-  end
-
   def following?(pet)
     followed_pets.include?(pet)
   end
 
+  def feed
+    Checkin.from_pets_followed_by(self)
+  end
 
 
   # private methods

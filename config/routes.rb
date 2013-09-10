@@ -49,6 +49,7 @@ PetSquare::Application.routes.draw do
   resources :places do
     resources :checkins
     resources :reviews
+    resources :pets
 
     collection do
       get :search

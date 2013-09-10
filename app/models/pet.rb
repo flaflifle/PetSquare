@@ -4,6 +4,8 @@ class Pet < ActiveRecord::Base
   belongs_to :user
   validates :user_id, presence: true
 
+  has_many :checkins
+
   has_many :follower_users, through: :relationships, source: :follower
   has_many :relationships, foreign_key: "followed_id", dependent: :destroy
 

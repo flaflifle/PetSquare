@@ -5,7 +5,7 @@
   <div class="span8">
     <% if @user.pets.any? %>
         <h3>Pets (<%= @user.pets.count %>)</h3>
-        <ol class="microposts">
+        <ol class="pets">
           <%= link_to "PEts", pets_user_path(@user)%>
         </ol>
     <% else %>
