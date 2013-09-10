@@ -1,6 +1,6 @@
 <% provide :title, 'Search results places' %>
 <ul>
-  <%= render @places %>
+  <%= render (@places) || "nessun luogo trovato" %>
 </ul>
 
 <%= link_to "Nuovo Posto", addPlace_path %>

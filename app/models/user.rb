@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
 
   has_many :reviews
+  has_many :checkins
 
   has_secure_password
 

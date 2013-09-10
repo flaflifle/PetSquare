@@ -1,5 +1,4 @@
 class PetsController < ApplicationController
-  #@user = User.find(params[:id])
   before_filter :signed_in_user
   # check if the user is allowed to delete a post
   before_filter :correct_user, only: [:destroy, :edit, :update]

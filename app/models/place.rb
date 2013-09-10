@@ -4,6 +4,7 @@ class Place < ActiveRecord::Base
   validates :description, presence: true, length: { maximum: 250 };
 
   has_many :reviews
+  has_many :checkins
 
   acts_as_gmappable
   def gmaps4rails_address

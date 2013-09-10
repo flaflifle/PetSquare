@@ -1,21 +1,4 @@
 PetSquare::Application.routes.draw do
-  get "reviews/index"
-
-  get "reviews/show"
-
-  get "reviews/destroy"
-
-  get "reviews/new"
-
-  get "reviews/create"
-
-  get "relationships/create"
-
-  get "relationships/destroy"
-
-  get "places/index"
-
-  get "places/show"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -41,6 +24,7 @@ PetSquare::Application.routes.draw do
   #   resources :products
 
   resources :users do
+  resources :pets
       member do
         get :pets
       end
@@ -59,12 +43,11 @@ PetSquare::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :pets
   #resources :places
-
-
+  #resources :checkins
 
   resources :places do
+    resources :checkins
     resources :reviews
-    resources :users
 
     collection do
       get :search

@@ -1,0 +1,14 @@
+<h1>Checkins#new</h1>
+<p>Find me in app/views/checkins/new.html.erb</p>
+
+<%= form_for(:checkin, url: {action: "create"})  do |f| %>
+
+    <% pets_array = current_user.pets { |pet| [pet.name, pet.id] } %>
+    <%= f.select :pet_id, options_from_collection_for_select(current_user.pets,
+                                                             "id", "namePet" )%>
+
+    <%= f.text_area :wayd%>
+
+    <%= f.submit 'Checkin', class: 'btn btn-primary' %>
+<% end %>
+

@@ -1,6 +1,7 @@
 <% provide :title, "Place: #{@place.name}" %>
 
 <h1><%= @place.name %></h1>
+<%= link_to "Check-in", new_place_checkin_path(@place)%>
 
 <%= gmaps({
                   "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 },
