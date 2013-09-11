@@ -29,6 +29,7 @@
 <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
+
 <%= yield %>
 
 <%= render 'layouts/footer' %>
@@ -36,6 +37,7 @@
 
 <%= yield :scripts %>
 <%= javascript_include_tag :application %>
+
 
 </body>
 </html>
