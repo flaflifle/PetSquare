@@ -4,7 +4,7 @@
 <h2><%= @pet.description %></h2>
 <h3><%= link_to @pet.user.name, user_path(@pet.user.id) %></h3>
 <section>
-  <%= render 'shared/stats' %>
+  <%= render 'stats' %>
   <%= render 'follow_form' if signed_in? %>
 
   <% if @pet.checkins.any? %>

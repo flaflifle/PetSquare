@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cc29767-f37a-402b-b1ba-3e73ef126ab3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/show_followed.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/pets/_search_form.html.erb" afterPath="$PROJECT_DIR$/app/views/pets/search_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/shared/_stats.html.erb" afterPath="$PROJECT_DIR$/app/views/pets/_stats.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pet.rb" afterPath="$PROJECT_DIR$/app/models/pet.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pets_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pets_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pets/search.html.erb" afterPath="$PROJECT_DIR$/app/views/pets/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/pets_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/pets_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pets/show.html.erb" afterPath="$PROJECT_DIR$/app/views/pets/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PetSquare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Ruby Console" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378768311227" ignored="false" />
-    <file path="/Dummy.txt" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378852234721" ignored="false" />
+    <file path="/Dummy.txt" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378855596450" ignored="false" />
     <file path="/user.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378840213113" ignored="false" />
     <file path="/routes.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378853887047" ignored="false" />
     <file path="/user_controller.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377544983881" ignored="false" />
@@ -22,7 +20,7 @@
     <file path="/edit.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377723796504" ignored="false" />
     <file path="/users_controller.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378853555953" ignored="false" />
     <file path="$USER_HOME$/Documents/Politecnico/LAM/Lab7/soluzione/SWorD-complete-lab7/app/views/users/edit.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377593872550" ignored="false" />
-    <file path="/pet.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378847087105" ignored="false" />
+    <file path="/pet.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378856844357" ignored="false" />
     <file path="/20130827090934_create_pets.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377594909763" ignored="false" />
     <file path="/home.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378853422918" ignored="false" />
     <file path="/faq.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377600918660" ignored="false" />
@@ -38,11 +36,11 @@
     <file path="/testomatic.rake" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378767434417" ignored="false" />
     <file path="/20130828150726_add_user_id_to_pets.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377702517024" ignored="false" />
     <file path="/_pet.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377704803443" ignored="false" />
-    <file path="/pets_controller.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378854261449" ignored="false" />
+    <file path="/pets_controller.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378857122632" ignored="false" />
     <file path="/new.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378829810749" ignored="false" />
     <file path="/pages_controller.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378846266547" ignored="false" />
     <file path="/relationship.rb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1377766170018" ignored="false" />
-    <file path="/_stats.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378588232527" ignored="false" />
+    <file path="/_stats.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378857592262" ignored="false" />
     <file path="/show_follow.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378588941313" ignored="false" />
     <file path="/_feed.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378845860289" ignored="false" />
     <file path="/_feed_item.html.erb" changelist="7cc29767-f37a-402b-b1ba-3e73ef126ab3" time="1378850402911" ignored="false" />
@@ -112,28 +110,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show_followed.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show_followed.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pets/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.75">
+            <state line="6" column="14" selection-start="224" selection-end="224" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
+      <file leaf-file-name="_stats.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/pets/_stats.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="47" selection-start="140" selection-end="154" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="review.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/review.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="9" column="53" selection-start="300" selection-end="300" vertical-scroll-proportion="0.3739612">
               <folding />
             </state>
           </provider>
@@ -142,61 +131,25 @@
       <file leaf-file-name="pet.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/pet.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="23" column="8" selection-start="701" selection-end="826" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pets/search.html.erb">
+      <file leaf-file-name="pets_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pets_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="42" selection-start="161" selection-end="161" vertical-scroll-proportion="-3.75">
+            <state line="63" column="0" selection-start="1180" selection-end="1243" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/pets/search_form.html.erb">
+      <file leaf-file-name="pets_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/pets_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="36" selection-start="180" selection-end="180" vertical-scroll-proportion="0.092307694">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkin.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/checkin.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="53" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="3" column="9" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -225,11 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130910210240_add_index_to_checkins.rb" />
-        <option value="$PROJECT_DIR$/app/models/pet.rb" />
-        <option value="$PROJECT_DIR$/app/views/places/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pets/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_feed_item.html.erb" />
         <option value="$PROJECT_DIR$/app/views/checkins/_checkin.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_followed_form.html.erb" />
@@ -237,10 +185,15 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show_followed.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pets/search_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pets/search.html.erb" />
         <option value="$PROJECT_DIR$/app/models/checkin.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_stats.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pets/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/pet.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/pets_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pets_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/pets/_stats.html.erb" />
       </list>
     </option>
   </component>
@@ -346,6 +299,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PetSquare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PetSquare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PetSquare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PetSquare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -361,6 +358,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PetSquare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PetSquare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,6 +416,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/pets" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: PetSquare">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -900,7 +920,11 @@
       <created>1378852238063</created>
       <updated>1378852238063</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="control search pet">
+      <created>1378855602082</created>
+      <updated>1378855602082</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -989,7 +1013,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="control search pet" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1010,15 +1034,11 @@
     <MESSAGE value="update homepage with search pet and place" />
     <MESSAGE value="create feed" />
     <MESSAGE value="update interface" />
+    <MESSAGE value="control search pet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/pets_controller.rb</url>
-          <line>54</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/views/places/search_form.html.erb</url>
           <line>1</line>
@@ -1040,39 +1060,28 @@
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/views/pets/show.html.erb</url>
-          <line>4</line>
-          <option name="timeStamp" value="137" />
+          <url>file://$PROJECT_DIR$/app/controllers/pets_controller.rb</url>
+          <line>64</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/pet.rb</url>
+          <line>26</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/views/pets/_stats.html.erb</url>
+          <line>9</line>
+          <option name="timeStamp" value="142" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="139" />
+      <option name="time" value="143" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="140" selection-end="154" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/places/search_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1108,13 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/review.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1129,37 +1131,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/pet.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pets_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="17" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6753247">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/checkin.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="53" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+        <state line="13" column="53" selection-start="419" selection-end="419" vertical-scroll-proportion="0.5064935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pets/search_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="180" selection-end="180" vertical-scroll-proportion="0.092307694">
+        <state line="7" column="33" selection-start="524" selection-end="524" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-0.5483871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pets/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="224" selection-end="224" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/pets_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/pet.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="701" selection-end="826" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pets_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="1180" selection-end="1243" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pets/_stats.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="53" selection-start="300" selection-end="300" vertical-scroll-proportion="0.3739612">
           <folding />
         </state>
       </provider>

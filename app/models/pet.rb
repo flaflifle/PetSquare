@@ -21,4 +21,12 @@ class Pet < ActiveRecord::Base
     end
   end
 
+=begin
+  def self.popularity(pet)
+    if pet
+      where('followed_id= ? GROUP BY followed_id', "%#{pet}")
+    end
+  end
+=end
+
 end

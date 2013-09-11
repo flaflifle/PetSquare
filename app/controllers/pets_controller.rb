@@ -61,6 +61,10 @@ class PetsController < ApplicationController
     @pets = Pet.search(params[:search])
   end
 
+  def popularity
+    @int = @pet.follower_users.count*10
+  end
+
   private
 
   def user_params
