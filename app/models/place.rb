@@ -13,11 +13,11 @@ class Place < ActiveRecord::Base
   end
 
   def self.search(name, cat)
-    if cat && name
+    if !cat.blank? && !name.blank?
       self.where("UPPER(name) = UPPER(?) AND UPPER(category) = UPPER(?)", name, cat)
-    elsif cat
+    elsif !cat.blank?
       where("UPPER(category) = UPPER(?)",cat)
-    elsif name
+    elsif !name.blank?
       where("UPPER(name) = UPPER(?)",name)
     else
       scoped # return an empty result set

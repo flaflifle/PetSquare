@@ -57,7 +57,7 @@ class PetsController < ApplicationController
     render 'show_follow'
   end
 
-  def search_form
+  def search
     @pets = Pet.search(params[:search])
   end
 
