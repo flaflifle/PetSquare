@@ -1,6 +1,13 @@
 <% provide :title, 'Search results places' %>
-<ul>
-  <%= render (@places) || "nessun luogo trovato" %>
-</ul>
+<% unless @places.empty? %>
+    <% @places.each do |place| %>
+        <li><b><%= place.name %></b></li>
+    <% end %>
+    </ul>
+
+    <%= gmaps4rails(@json) %>
+<% else %>
+    <p>nessun posto trovato</p>
+<% end %>
 
 <%= link_to "Nuovo Posto", addPlace_path %>
