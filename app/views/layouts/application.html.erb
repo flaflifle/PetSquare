@@ -2,12 +2,12 @@
 <html>
 <head>
   <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <script type="text/javascript"
+  <%= stylesheet_link_tag    "application", "gmaps4rails", :media => "all" %>
+  <!--<script type="text/javascript"
           src="https://maps.googleapis.com/maps/api/js?sensor=false">
-  </script>
-  <%= stylesheet_link_tag    "gmaps4rails" %>
-  <%= javascript_include_tag "application" %>
+  </script>-->
+  <%# stylesheet_link_tag    "gmaps4rails" %>
+  <%= javascript_include_tag "application", "https://maps.googleapis.com/maps/api/js?sensor=false" %>
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim'%>
 </head>
