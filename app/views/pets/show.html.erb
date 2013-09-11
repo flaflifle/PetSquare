@@ -1,8 +1,32 @@
 <% provide :title, "Animal #{@pet.namePet}" %>
+<div class="main">
+  <div class="row">
+    <div class="large-1 columns">
+
+      <canvas id="esempio" width="100" height="100" style="border:1px solid black"></canvas>
+      <script type="text/javascript">
+          var canvas = document.getElementById('esempio');
+          var c = canvas.getContext('2d');
+          var img = new Image();
+          img.addEventListener('load', function () {
+              c.drawImage(this, 0, 0, 100, 100); //  ultimi due sono le dimensioni (larghezza altezza) dell immagine (scalamento)
+          }, false);
+          img.src = 'https://dl.dropboxusercontent.com/u/63254876/emanuele5.jpg';
+      </script>
+
+    </div>
+  <div class="large-2 columns">
 <h1><%= @pet.namePet %></h1>
+  </div>
+    <div class="large-8 columns">
+      <h3><%= link_to @pet.user.name, user_path(@pet.user.id) %></h3>
+      </div>
+  </div>
 <h2><%= @pet.breed %></h2>
 <h2><%= @pet.description %></h2>
-<h3><%= link_to @pet.user.name, user_path(@pet.user.id) %></h3>
+
+
+  </div>
 <section>
   <%= render 'stats' %>
   <%= render 'follow_form' if signed_in? %>
@@ -15,3 +39,4 @@
   <% end %>
 
 </section>
+</div>

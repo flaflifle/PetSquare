@@ -1,6 +1,10 @@
-<h1>this is new place</h1>
+<div class="main">
+  <h1>this is new place</h1>
 
-<div>
+<div class="row">
+  <div class="large-6 columns">
+    <fieldset>
+      <legend>Parametri nuovo luogo</legend>
   <%= form_for(@place) do |f|%>
       <%= f.text_field :name, placeholder: 'nome posto' %>
       <%= f.text_field :category, placeholder: 'categoria' %>
@@ -10,7 +14,10 @@
 
       <%= f.text_field :country, placeholder: 'country' %>
       <%= f.text_field :description, placeholder: 'descrizione' %>
+          </fieldset>
 
-      <%= f.submit 'Create new place', class: 'btn btn-large btn-primary' %>
+      <%= f.submit 'Create new place', class: 'round primary small button' %>
   <% end %>
+  </div>
+</div>
 </div>

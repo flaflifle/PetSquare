@@ -1,14 +1,18 @@
-<h1>Checkins#new</h1>
+<div class="main">
+  <h1>Checkins#new</h1>
 <p>Find me in app/views/checkins/new.html.erb</p>
-
+           <div class="row">
+             <div class="large-4 columns">
 <%= form_for(:checkin, url: {action: "create"})  do |f| %>
-
+    <legend>Sei con:</legend>
     <% pets_array = current_user.pets { |pet| [pet.name, pet.id] } %>
     <%= f.select :pet_id, options_from_collection_for_select(current_user.pets,
                                                              "id", "namePet" )%>
-
+    <legend>Cosa stai facendo</legend>
     <%= f.text_area :wayd%>
 
-    <%= f.submit 'Checkin', class: 'btn btn-primary' %>
+    <%= f.submit 'Checkin', class: 'round success small button' %>
 <% end %>
-
+</div>
+</div>
+</div>

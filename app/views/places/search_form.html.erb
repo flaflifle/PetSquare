@@ -1,7 +1,16 @@
-<h5>Cerca posto</h5>
+<div class="main">
+  <h5>Cerca posto</h5>
+  <div class="row">
+    <div class="large-6 columns">
+      <fieldset>
+        <legend>Filtri ricerca luogo</legend>
 <%= form_tag search_places_path, method: 'get', class: 'navbar-search pull-left' do%>
     <% # text_field_tag: the first parameter is the id/name of the input tag; the second is the value of the tag %>
     <%= text_field_tag :search_name, params[:search_name], class: 'search-query', placeholder: 'nome' %>
     <%= text_field_tag :search_cat, params[:search_cat], class: 'search-query', placeholder: 'categoria' %>
-    <%= submit_tag ("cerca") %>
+            </fieldset>
+    <%= submit_tag ("cerca"), class:'round small primary button' %>
 <% end %>
+  </div>
+</div>
+</div>

@@ -1,10 +1,17 @@
-<h1>Crea il profilo al tuo animale</h1>
+<div class="main">
 
-<div>
+ <h1>Crea il profilo al tuo animale</h1>
+
+<div class="row">
+  <div class="large-4 columns">
+    <fieldset>
+      <legend>Dati animale</legend>
   <%= form_for(@pet) do |f| %>
 
       <%= render 'fields', f: f %>
-
-      <%= f.submit 'Create my animal profile', class: 'btn btn-primary' %>
+          </fieldset>
+      <%= f.submit 'Create my animal profile', class: 'small round primary button' %>
+        </div>
   <% end %>
+</div>
 </div>

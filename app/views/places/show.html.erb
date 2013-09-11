@@ -1,5 +1,5 @@
 <% provide :title, "Place: #{@place.name}" %>
-
+      <div class="main">
 <h1><%= @place.name %></h1>
 <%= link_to "Check-in", new_place_checkin_path(@place)%>
 
@@ -8,8 +8,8 @@
                   "markers"     => {"data" => @json }
           }) %>
 
-<div>Descrizione:</div>
-<%= @place.description %>
+<label>Descrizione:</label>
+<textarea class="large-6 columns"><%= @place.description %> </textarea>
 
 <h2>Reviews</h2>
 <% @place.reviews.each do |review| %>
@@ -34,3 +34,4 @@
       <%= f.submit %>
     </p>
 <% end %>
+</div>

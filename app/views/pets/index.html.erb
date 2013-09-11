@@ -1,5 +1,10 @@
 <% @pets.each do |pet| %>
-    <li>
+    <div class="main">
+       <div class="row">
+         <div class="large-6 columns">
+      <fieldset>
+        <legend>I miei animali</legend>
+        <li>
       <tr>
         <td><%= pet.namePet %></td>
         <td><%= pet.breed %></td>
@@ -10,7 +15,12 @@
             | <%= link_to 'Delete', pet, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
         <% end %>
       </tr>
-    </li>
+        </li>
+      </fieldset>
+           <%= link_to "Crea il profilo di un altro animale", addPet_path %>
+         </div>
+       </div>
 <% end %>
 
-<%= link_to "crea il profilo al tuo animale", addPet_path %>
+
+</div>
