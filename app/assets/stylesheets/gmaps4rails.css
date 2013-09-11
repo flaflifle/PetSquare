@@ -1,5 +1,5 @@
 .map_container {
-  max-width: none;
+    .img { max-width: none; }
   padding: 6px;
   border-width: 1px;
   border-style: solid;
@@ -11,7 +11,7 @@
 }
 
 .gmaps4rails_map {
-  max-width: none;
+    .img { max-width: none; }
   width: 800px;
   height: 400px;
 }
