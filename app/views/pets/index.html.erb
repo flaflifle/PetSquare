@@ -1,16 +1,16 @@
 <% @pets.each do |pet| %>
-   <li>
-     <tr>
-      <td><%= pet.namePet %></td>
-      <td><%= pet.breed %></td>
-      <td><%= pet.description %></td>
-      <td><%= link_to 'Show', pet_path(pet) %></td>
-      <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
-      <td><% if current_user.admin? || current_user?(pet.user) %>
+    <li>
+      <tr>
+        <td><%= pet.namePet %></td>
+        <td><%= pet.breed %></td>
+        <td><%= pet.description %></td>
+        <td><%= link_to 'Show', pet_path(pet) %></td>
+        <td><% if current_user.admin? || current_user?(pet.user) %>
+            <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
             | <%= link_to 'Delete', pet, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
-          <% end %>
-     </tr>
-   </li>
+        <% end %>
+      </tr>
+    </li>
 <% end %>
 
 <%= link_to "crea il profilo al tuo animale", addPet_path %>
